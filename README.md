@@ -1,2 +1,2 @@
 # jon-github-actions
-This is a playground for Jobn
+This is a playground for Jon
