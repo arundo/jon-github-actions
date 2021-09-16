@@ -14,6 +14,10 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
+    - run: echo Secret ${{ secrets.DOCKER_REGISTRY_SERVER }}.
+      shell: bash
+    - run: echo Secret Length ${#{{ secrets.DOCKER_REGISTRY_SERVER }}}.
+      shell: bash
     - id: random-number-generator
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
       shell: bash
